@@ -36,7 +36,7 @@ public class TestController {
 		return map;
 	}
 
-	@GetMapping("test/test4")
+	@GetMapping("test/test4") //db 연동
 	public List<Map<String, Object>> test4() {
 		return postMapper.selectPostList();
 	}
