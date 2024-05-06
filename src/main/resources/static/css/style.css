@@ -1,0 +1,15 @@
+@charset "UTF-8";
+header {
+	height:80px;
+	background-color: #ffe4e1;
+	}
+.contents {
+	min-height:500px;
+	width:800px;
+	margin:auto;
+	}
+
+footer {
+	height:100px;
+	background-color:lightgrey;
+	}
