@@ -20,4 +20,14 @@ public class UserController {
 		return "template/layout";
 	}
 	
+	/**
+	 * 로그인 화면 뷰
+	 * @param model
+	 * @return
+	 */
+	@GetMapping("/sign-in-view")
+	public String signInView(Model model) {
+		model.addAttribute("viewName", "user/signIn");
+		return "template/layout";
+	}
 }

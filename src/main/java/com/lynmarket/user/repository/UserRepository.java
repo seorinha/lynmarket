@@ -11,4 +11,7 @@ public interface UserRepository extends JpaRepository<UserEntity, Integer>{
 	//아이디 중복확인
 	//null or 채워져있음
 	public UserEntity findByLoginId(String loginId);
+	
+	//로그인
+	public UserEntity findByLoginIdAndPassword(String loginId, String password);
 }
