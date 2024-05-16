@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <div>
 	<%--로그인 제목 영역 --%>
 	<div>
@@ -35,7 +36,8 @@
 
 	<%--네이버 로그인 버튼 --%>
 	<div class="d-flex justify-content-center mt-4">
-		<a id="naver-login-btn" href="https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=gT5IjJe8sr3XPkEy2PKl&redirect_uri=http://localhost:8080/naver/callback"> 
+		<a id="naver-login-btn" href="https://nid.naver.com/oauth2.0/authorize?client_id=gT5IjJe8sr3XPkEy2PKl&redirect_uri=http://localhost:8080/naver/redirect&response_type=code
+		"> 
 		<img src="https://static.nid.naver.com/oauth/small_g_in.PNG"
 			height="45" width="auto" alt="네이버 로그인 버튼">
 		</a>
